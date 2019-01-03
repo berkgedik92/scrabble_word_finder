@@ -1,0 +1,121 @@
+﻿body {
+	margin-top:0;
+}
+
+#board_container {
+	float:left;
+	margin-top:5px;
+}
+
+#right_menu {
+	float:right;
+	height:600px;
+	width:548px;
+	margin-right:25px;
+	margin-top:5px;
+}
+
+#user_hand_container {
+	height:77px;
+}
+
+#left_numbers {
+	width:20px;
+	margin-top:36px;
+	margin-left:5px;
+	float:left;
+}
+
+#results_container {
+	height:415px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	background-color : #fcb;
+	margin-bottom : 10px;
+	margin-top:20px;
+}
+
+#buttons_container {
+	padding : 15px;
+	height:100px;
+	background-color : #5fb;
+	margin-top: 10px;
+}
+
+.board_row_container:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.board_cell {
+	float:left;
+    background-size: cover;
+    background-repeat: no-repeat;
+	width:40px;
+	height:40px;
+	font-size : 42px;
+	border: 1px solid orange;
+}
+
+.header_number {
+	width:42px;
+	height:20px;
+	float:left;
+	text-align : center;
+}
+
+.left_number {
+	width:20px;
+	height:42px;
+}
+
+.hand_cell {
+	box-sizing: border-box;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 77px;
+	height: 77px;
+	border: 1px solid orange;
+}
+
+.hidden_element {
+	display:none;
+}
+
+.candidate_cell {
+	width:175px;
+	border-right : 2px solid black;
+	border-bottom :2px solid black;
+	float:left;
+	height:50px;
+	font-size:35px;
+	color : #555;
+	padding-top : 10px;
+	text-align: center;
+	cursor : crosshair;
+}
+
+.critical {
+	background-color : rgb(255,0,0);
+}
+
+.high {
+	background-color : rgb(255,127,39);
+}
+
+.medium {
+	background-color : rgb(255,242,0);
+}
+
+.low {
+	background-color : rgb(153,217,234);
+}
+
+.focused {
+	border: 1px solid red;
+}
