@@ -54,4 +54,5 @@ Also the following properties can be modified:
 
 Those properties are kept in script/configuration.js as well, so they can be changed by editing this file.
 
+Combining all those customizations together, one can make this application work for a different language.
 
