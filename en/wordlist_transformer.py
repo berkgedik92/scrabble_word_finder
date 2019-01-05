@@ -2,7 +2,7 @@ letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
            "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
            "u", "v", "w", "x", "y", "z"]
 
-with open("englishWords.txt", "r", encoding="utf-8") as input:
+with open("wordlist.txt", "r", encoding="utf-8") as input:
     words = input.readlines()
 
 with open("script/loaddatabaseTemplate.js", "r", encoding="utf-8") as inp:
