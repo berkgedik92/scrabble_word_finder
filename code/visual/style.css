@@ -1,0 +1,120 @@
+﻿body {
+	margin-top: 10px;
+}
+
+#language_selector {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: right;
+}
+
+#language_selector  .language {
+	padding: 10px;
+}
+
+#language_selector  .language:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+#board_container {
+	display: inline-block;
+	margin-bottom: 10px;
+    width: 630px;
+}
+
+#right_menu {
+	height: 600px;
+    width: 560px;
+    display: inline-block;
+    vertical-align: top;
+	background-color : #5fb;
+}
+
+#user_hand_container {
+	height:77px;
+	display: flex;
+    justify-content: space-between;
+    gap: 1px;
+    padding: 0px 5px;
+}
+
+#results_container {
+	height:415px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	background-color : #fcb;
+	margin-bottom : 10px;
+}
+
+#buttons_container {
+    padding: 0px 5px;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.board_row_container:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.board_cell {
+	float:left;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+	width:40px;
+	height:40px;
+	font-size : 42px;
+	border: 1px solid orange;
+	box-sizing: border-box;
+}
+
+.hand_cell {
+	box-sizing: border-box;
+	float: left;
+    background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 77px;
+	height: 77px;
+	border: 1px solid orange;
+}
+
+.hidden_element {
+	display:none;
+}
+
+.candidate_cell {
+    width: 33.3%;
+    display: inline-block;
+    box-sizing: border-box;
+	border-right : 2px solid black;
+	border-bottom :2px solid black;
+	font-size:35px;
+	color : #555;
+	padding : 10px;
+	text-align: center;
+	cursor : pointer;
+}
+
+.critical {
+	background-color : rgb(255,0,0);
+}
+
+.high {
+	background-color : rgb(255,127,39);
+}
+
+.medium {
+	background-color : rgb(255,242,0);
+}
+
+.low {
+	background-color : rgb(153,217,234);
+}
+
+.focused {
+	border: 2px solid red;
+}

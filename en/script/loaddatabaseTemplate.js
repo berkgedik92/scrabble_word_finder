@@ -1,3 +1,0 @@
-function LoadDatabase() {
-#REPLACE HERE#
-}
