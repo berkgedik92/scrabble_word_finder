@@ -423,6 +423,9 @@ function Game(config) {
 
     this.tree = new WordTree(this.alphabet_size);
     let language = new URLSearchParams(window.location.search).get("lang");
+    if (language !== "tr") {
+        language = "en";
+    }
     LoadDatabase(this.tree, language);
 
     let root = this;

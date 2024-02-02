@@ -8,11 +8,11 @@
 	justify-content: right;
 }
 
-#language_selector  .language {
+#language_selector .language {
 	padding: 10px;
 }
 
-#language_selector  .language:not(:last-child) {
+#language_selector .language:not(:last-child) {
     border-right: 1px solid black;
 }
 

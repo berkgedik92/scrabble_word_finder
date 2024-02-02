@@ -5,6 +5,7 @@ if (language === "tr") {
     configuration = configurationTr;
 }
 else {
+    language = "en";
     configuration = configurationEn;
 }
 
@@ -70,9 +71,18 @@ function ClearBoardCell(row_index, col_index) {
 
 $(document).ready(function() {
 
+    if (language === "tr") {
+        $("#language_selector .language").eq(1).css("background-color", "lightblue");
+        $("#language_selector .language").eq(1).css("font-size", "25px");
+    }
+    else {
+        $("#language_selector .language").eq(0).css("background-color", "lightblue");
+        $("#language_selector .language").eq(0).css("font-size", "25px");
+    }
+
     //Create the map to go from ASCII code to the properties of the corresponding letter
     $.each(configuration.alphabet, function(index, element) {
-        let ascii_code = element.letter.toLocaleUpperCase(); //.charCodeAt(0);
+        let ascii_code = element.letter.toLocaleUpperCase(language);
         element["ascii"] = ascii_code;
         ascii_to_letter_index[ascii_code] = index;
     });
@@ -139,8 +149,8 @@ $(document).keydown(function (e) {
     focused_element_DOM.removeClass("focused");
 
     e.preventDefault();
-    let k = e.originalEvent.key.toUpperCase();
-    
+    let k = e.originalEvent.key.toLocaleUpperCase(language);
+
     //If a cell on board was focused...
     if (is_board_focused) {
 
