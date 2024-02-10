@@ -25,7 +25,7 @@ After putting the game board in a desired state, click "Commit The Board" button
 
 Now, we need to enter the letters in our hand. The seven empty boxes on top of the buttons are for that purpose. You can put letters the same way you added letters to the game board (you don't have to put 7 letters there can be some empty boxes as well). After doing that, press "Show Possible Words". It will compute all possible moves considering the game board and the letters in hand and output the suggestions on the top right of the screen. This is a screenshot of how it looks like:
 
-<p align="center"><img src="screenshots/suggestion.png"/></p>
+<p align="center"><img src="screenshots/suggestion_new.png"/></p>
 
 Note that the words that are suggested might be weird. If it is the case, it is because of the English words list that has been used in the application. Changing the words' list will fix the problem. The way to do this will be explained in the [**Customization section**](#customization-section). 
 
